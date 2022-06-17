@@ -24,7 +24,7 @@
     width: 100%;
     z-index: 1000;
     height: 3.5rem;
-    
+   
 }
 
 #left_nav{
@@ -262,6 +262,7 @@ a{
 /* section-5 end */
 
 /* footer  */
+
 #footer1{
 
     width: 70rem;
@@ -286,7 +287,7 @@ a{
 
 @media (max-width:1400px) {
 html {
-        text-align: center;
+        /* text-align: center; */
     }
         #left_nav>p>a{
         font-size: 0.8rem;
@@ -306,7 +307,7 @@ html {
 }
 @media (max-width:1200px) {
 html {
-        text-align: center;
+        /* text-align: center; */
     }
          #tags {
              text-align: center;
@@ -332,7 +333,7 @@ html {
 
 @media (max-width:1000px) {
     html{
-        text-align: center;
+        /* text-align: center; */
     }
     #sec1{
         font-size: 3rem;
@@ -357,8 +358,8 @@ html {
     }
 
         #footer1 {
-    width: 60rem;
-    margin: auto;
+            width: 60rem;
+            margin: auto;
             font-size: 0.9rem;
         }
         #footer2 {
