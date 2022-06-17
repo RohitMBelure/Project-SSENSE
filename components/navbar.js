@@ -11,7 +11,7 @@ let navbar = () =>{
 
       <center>
         <div id="mid_nav">
-          <a href="index.html">
+          <a href="../index.html">
             <img
               id="logo"
               src="https://res.cloudinary.com/ssenseweb/image/upload/v1471963917/web/ssense_logo_v2.svg"
@@ -22,12 +22,12 @@ let navbar = () =>{
       </center>
 
       <div id="right_nav">
-        <p><a id="hover_effect" href="login.html"> LOGIN</a></p>
-        <p><a id="hover_effect" href="wishlist.html"> WISHLIST</a></p>
+        <p><a id="hover_effect" href="./Login/login.html"> LOGIN</a></p>
+        <p><a id="hover_effect" href="./wishlist/wishlist.html"> WISHLIST</a></p>
         <p><a id="hover_effect" href="cart.html"> SHOPPING BAG</a></p>
       </div> 
       <div img id="icon">
-   <a id="hover_effect" href="login.html"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPRJREFUSEvNlWENwjAQhb8pAAmgAJCAA3AACpAAKCAoQAJIQAIOQAIogLxkDdC1vWVlZPfnsqx53/Xd7lbQchQt61MXMAbWgLLiAmzLnKyxDmAGHCMqc+CUIliAPnAFlENxB4aAcjAsQKp6JzgFzk0Bm9L7lAvqhc518wby/gb0IgU+gEFOD6Tb6lfkCtf3L58/50DPmofsObA0ugtQg1dlD5w1frWySJO8jzU6NmgLYJeYYB+kSV6G1kYIIPFDQ+Mru8kHWLvH4lZ2kw+osxosyNfq8AFq2shSMN5LY+LO+IBnpnhF9++AH13gLWP9cLKBrQNeWrEoGRxI2IoAAAAASUVORK5CYII="/></a>
+   <a id="hover_effect" href="./Login/login.html"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPRJREFUSEvNlWENwjAQhb8pAAmgAJCAA3AACpAAKCAoQAJIQAIOQAIogLxkDdC1vWVlZPfnsqx53/Xd7lbQchQt61MXMAbWgLLiAmzLnKyxDmAGHCMqc+CUIliAPnAFlENxB4aAcjAsQKp6JzgFzk0Bm9L7lAvqhc518wby/gb0IgU+gEFOD6Tb6lfkCtf3L58/50DPmofsObA0ugtQg1dlD5w1frWySJO8jzU6NmgLYJeYYB+kSV6G1kYIIPFDQ+Mru8kHWLvH4lZ2kw+osxosyNfq8AFq2shSMN5LY+LO+IBnpnhF9++AH13gLWP9cLKBrQNeWrEoGRxI2IoAAAAASUVORK5CYII="/></a>
     
    <a id="hover_effect" href="cart.html"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOVJREFUSEvtldERAUEMhr+rwKgAFaACVEAJdEAFdIAOlEAFlEAF6EAHTGay3NzOXnbWHC+Xl9ub3P5fsptLMiq2rGJ9YgFDYAn0NKATsAXkWWoxgDmwDqjMgF0ZwQJI5EcVWAB7XU81I3ntA+cQxAKI4BgQ8U1BZKWQAzBJBTyABtAEZJ23NnAFbkAnFfDUjaFMLb9XRVIVA6syDL9ojNw3xchcRF8yPoFbAOcPgUP+t+7fAalHFZ1BDfD+g5+XaX0H3h1IZ2ylnovuu+QmnweQvi59vpsIuQMyAd1gip7JiTyqB7wAdn4pGePmrngAAAAASUVORK5CYII="/> </div></a>`;
 }
