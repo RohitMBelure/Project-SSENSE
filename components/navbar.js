@@ -1,12 +1,11 @@
 let navbar = () =>{
-    return ` <div id="icon"> <a id="hover_effect" href="sidedata.html"> <img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAExJREFUSEtjZKAxYKSx+QyjFhAM4QEJov8EnYVfAYqjsfmA5hZQ6AFU7QMSBzT3Ac3jgOYW0DyIhr4FNI8Dmlsw9ONg1AcoIUDz0hQAbegGGXzv/l0AAAAASUVORK5CYII="/> </a>
+    return  `<div id="icon"> <a id="hover_effect" href="sidedata.html"> <img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAExJREFUSEtjZKAxYKSx+QyjFhAM4QEJov8EnYVfAYqjsfmA5hZQ6AFU7QMSBzT3Ac3jgOYW0DyIhr4FNI8Dmlsw9ONg1AcoIUDz0hQAbegGGXzv/l0AAAAASUVORK5CYII="/> </a>
     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUJJREFUSEu9le0xBEEURc9GQAhEgAzIgAjIABmQARmQgQwQARnYEIiAOlWv1avR3TO7NWOq9sdOd9/z+r6PWbHws1pYnx5gD7gEjoHDCOQdeAHugfWU4FqAuxDvabjnegxSAxjlQRx8BBTynY83uQLO042OepAhoET+FdYU4aGGIK3aCbuEVp8M0POP2GVULfEiJOQt/uy3cpIBJXoT2IxoEOZD2NU8kwHF+ynRD2/h2WouMuA7Tm3aG91zcwEsit1aluey6DWq7g/jX5O8bZlqjyVbHR2tRvsETjq9oOBz+H4L3ExptLInjwrr3BrPo8IBeJEEXTMYg+rmIC+ODTttcc9pzK0mZGxc29GOa4efogr5U1zPLU1nkutVyKZNVXOhC5kDIDRDzoCnEslcgALRzl9xX84JGP0e9D5MW68tfoMfCXxMGRHr0pcAAAAASUVORK5CYII="/> </div>
 <div id="left_nav">
-        <p><a id="hover_effect" href="mens.html">MENSWEAR</a></p>
-        <p><a id="hover_effect" href="womens.html"> WOMENSWEAR</a></p>
-        <p><a id="hover_effect" href="everything.html"> EVERYTHING ELSE</a></p>
-        <p><a id="hover_effect" href="sale.html"> SALE</a></p>
-        <p><a id="hover_effect" href="search.html">SEARCH</a></p>
+        <p><a id="hover_effect" href="../products/mens.html">MENSWEAR</a></p>
+        <p><a id="hover_effect" href="../products/womens.html">WOMENSWEAR</a></p>
+        <p><a id="hover_effect" href="../products/womens.html"> EVERYTHING ELSE</a></p>
+        <p><a id="hover_effect" href="../products/mens.html"> SALE</a></p>
       </div>
 
       <center>
