@@ -1,0 +1,77 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+#account{
+    display: flex;
+    margin-top: 150px;
+    margin-bottom: -100px;
+}
+#left{
+    /* border: 1px solid ; */
+    width: 150px;
+    height: 500px;
+    margin-left: 50px;
+    font-size: 12px;
+    line-height: 16px;
+}
+#left>h3{
+    margin-bottom: 30px;
+}
+#right{
+    /* border: 1px solid ; */
+    width: 500px;
+    height: 700px;
+    margin-left: 250px;
+}
+#left>h3:hover, #left>p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.heading{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.small{
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.large{
+    font-size: 14px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.input1, .input2, .input3, .input4, .input5, .input6, .input7{
+    height: 25px;
+    width: 492px;
+    margin-bottom: 10px;
+}
+.input8, .input9{
+    height: 25px;
+    width: 230px;
+}
+.emaildiv{
+    height: 25px;
+    width: 490px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+}
+button{
+    margin-left: 160px;
+    width: 180px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+}
+button:hover{
+    cursor: pointer;
+}
+.div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
