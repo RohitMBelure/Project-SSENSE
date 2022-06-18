@@ -53,7 +53,7 @@ let continueFunc = () => {
         }
     });
 
-    if (notExist===true){
+    if ((notExist===true) || (arr.length==0)){
     container.innerHTML=null;
 
     const p1 = document.createElement('p');
