@@ -22,8 +22,8 @@ let navbar = () =>{
       </center>
 
       <div id="right_nav">
-        <p><a id="hover_effect" href="./Login/login.html"> LOGIN</a></p>
-        <p><a id="hover_effect" href="./wishlist/wishlist.html"> WISHLIST</a></p>
+        <p><a id="hover_effect" href="../Login/login.html"> LOGIN</a></p>
+        <p><a id="hover_effect" href="../wishlist/wishlist.html"> WISHLIST</a></p>
         <p><a id="hover_effect" href="cart.html"> SHOPPING BAG</a></p>
       </div> 
       <div img id="icon">
