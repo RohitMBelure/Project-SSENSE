@@ -67,19 +67,19 @@ if (arr.length===0){
     btn1.setAttribute("class", "btn")
     btn1.innerText="SHOP MENSWEAR";
     btn1.addEventListener("click", function(){
-        window.location.href="menswear.html"
+        window.location.href="../products/mens.html"
     })
     let btn2 = document.createElement("button");
     btn2.setAttribute("class", "btn")
     btn2.innerText="SHOP WOMENSWEAR";
     btn2.addEventListener("click", function(){
-        window.location.href="womenswear.html"
+        window.location.href="../products/womens.html"
     })
     let btn3 = document.createElement("button");
     btn3.setAttribute("class", "btn")
     btn3.innerText="SHOP EVERYTHING ELSE";
     btn3.addEventListener("click", function(){
-        window.location.href="everythingElse.html"
+        window.location.href="../products/womens.html"
     })
     div.append(btn1,btn2,btn3);
     container.style.display="block";
