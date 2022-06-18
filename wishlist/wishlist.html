@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/wishlist.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@200&family=Open+Sans&family=Poppins:wght@100;200;400;600&family=Radio+Canada&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@100;400&family=Source+Sans+Pro&family=Ubuntu:wght@300&family=Work+Sans:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../home.css" />
+    <title>WISHLIST</title>
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="wishlist"></div>
+    <div id="products"></div>
+    <div id="footer">
+        <!-- append footer here -->
+      </div>
+</body>
+</html>
+<script src="./scripts/wishlist.js"></script>
+
+<script type="module">
+    import navbar from "../components/navbar.js";
+    document.getElementById("navbar").innerHTML = navbar();
+
+    import footer from "../components/footer.js";
+    document.getElementById("footer").innerHTML = footer();
+</script>
