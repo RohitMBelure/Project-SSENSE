@@ -727,7 +727,7 @@ function display_products(data) {
 
     card.onclick = function () {
       localStorage.setItem("product", JSON.stringify(el))
-      window.location.href = "./product.html"
+      window.location.href = "../description/desc.html"
     }
 
     products.append(card)
@@ -744,7 +744,12 @@ const prod = [
     name: 'Navy Cotton Blazer',
     designer: '032c',
     price: '$1825',
-    category: 'Suits & Blazers'
+    category: 'Suits & Blazers',
+    sImage: "https://img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/221264M180025_2/ermenegildo-zegna-navy-cotton-blazer.jpg",
+    tImage:"https://img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/221264M180025_3/ermenegildo-zegna-navy-cotton-blazer.jpg",
+   color:"Supplier color: Dark gray",
+   made_in:"Imported.",
+   big_desc:"Nylon-blend webbing belt in gray. Jacquard woven logo graphics in purple and brown throughout."
   }
   ,
   {
@@ -753,7 +758,12 @@ const prod = [
     name: 'White Tibb Down Vest',
     designer: '032c',
     price: '$1090',
-    category: 'Jackets & Coats'
+    category: 'Jackets & Coats',
+    sImage:"https://img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/222111M178011_2/moncler-white-tibb-down-vest.jpg",
+    tImage:"https://img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/222111M178011_3/moncler-white-tibb-down-vest.jpg",
+    color:"Supplier color: White",
+    made_in:"Imported",
+    big_desc:"Down-filled quilted nylon satin vest.",
   }
   ,
   {
@@ -762,7 +772,12 @@ const prod = [
     name: 'Red \'Vetements Translation\' T-Shirt',
     designer: '032c',
     price: '$440',
-    category: 'Tops'
+    category: 'Tops',
+    sImage:"https://img.ssensemedia.com/images/b_white,c_lpad,g_center,h_1412,w_940/c_scale,h_960/f_auto,dpr_1.0/222669M213060_2/vetements-red-vetements-translation-t-shirt.jpg",
+tImage:"https://img.ssensemedia.com/images/b_white,c_lpad,g_center,h_1412,w_940/c_scale,h_960/f_auto,dpr_1.0/222669M213060_3/vetements-red-vetements-translation-t-shirt.jpg",
+color:"Supplier color: Red",
+made_in:"Made in Portugal.",
+big_desc:"Cotton jersey T-shirt.",
   }
   ,
   {
@@ -771,7 +786,13 @@ const prod = [
     name: 'White Cotton T-Shirt',
     designer: '032c',
     price: '$520',
-    category: 'Tops'
+    category: 'Tops',
+    sImage:"https://img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/222003M213015_2/dolce-and-gabbana-white-cotton-t-shirt.jpg",
+    tImage:"https://img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/222003M213015_3/dolce-and-gabbana-white-cotton-t-shirt.jpg",
+    color:"Supplier color: White",
+    made_in:"Made in Italy",
+    big_desc:"Cotton jersey T-shirt.",
+    
   }
   ,
   {
@@ -780,7 +801,8 @@ const prod = [
     name: 'Gray ROA Edition Andreas Boots',
     designer: 'A-COLD-WALL*',
     price: '$535',
-    category: 'Boots'
+    category: 'Boots',
+
   }
   ,
   {
