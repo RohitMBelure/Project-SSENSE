@@ -2,18 +2,11 @@ import navbar from "../components/navbar.js"
 import footer from "../components/footer.js"
 document.getElementById("navbar").innerHTML=navbar();
 document.getElementById("footer").innerHTML=footer();
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
 let whishlisted=JSON.parse(localStorage.getItem("whishlisted")) || [];
 let bag_arr=JSON.parse(localStorage.getItem("bagged")) || [];
+let product_data=JSON.parse(localStorage.getItem("product")) || []; 
 
-let product_data=JSON.parse(localStorage.getItem("product")) || [];
-
-
-
- 
     document.getElementById("desc_title").innerText=product_data.name;
     document.getElementById("desc_desc").innerText=product_data.category;
     document.getElementById("desc_color").innerText=product_data.color;
@@ -42,11 +35,7 @@ let product_data=JSON.parse(localStorage.getItem("product")) || [];
   product_data["size"]=selected_size.value;
     whishlisted.push(product_data);
     localStorage.setItem("whishlisted",JSON.stringify(whishlisted));
-<<<<<<< Updated upstream
-    console.log(whishlisted);
-=======
-    // console.log(whishlisted);
->>>>>>> Stashed changes
+
  }
  let info=document.getElementById("info")
  let cont=document.getElementById("desc-container")
