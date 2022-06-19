@@ -763,7 +763,7 @@ const prod = [
     designer: '032c',
 
     price: '$440',
-    category: 'Tops'
+    category: 'Tops',
 
     price: '$440',
 
@@ -776,7 +776,6 @@ color:"Supplier color: Red",
 made_in:"Made in Portugal.",
 
 sprice:2000,
-
 big_desc:"Cotton jersey T-shirt.",
 
   }
