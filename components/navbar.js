@@ -23,7 +23,7 @@ let navbar = () =>{
       <div id="right_nav">
         <p><a id="hover_effect" href="../Login/login.html"> LOGIN</a></p>
         <p><a id="hover_effect" href="../wishlist/wishlist.html"> WISHLIST</a></p>
-        <p><a id="hover_effect" href="cart.html"> SHOPPING BAG</a></p>
+        <p><a id="hover_effect" href="../shoppingbag/scart.html"> SHOPPING BAG</a></p>
       </div> 
       <div img id="icon">
    <a id="hover_effect" href="./Login/login.html"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPRJREFUSEvNlWENwjAQhb8pAAmgAJCAA3AACpAAKCAoQAJIQAIOQAIogLxkDdC1vWVlZPfnsqx53/Xd7lbQchQt61MXMAbWgLLiAmzLnKyxDmAGHCMqc+CUIliAPnAFlENxB4aAcjAsQKp6JzgFzk0Bm9L7lAvqhc518wby/gb0IgU+gEFOD6Tb6lfkCtf3L58/50DPmofsObA0ugtQg1dlD5w1frWySJO8jzU6NmgLYJeYYB+kSV6G1kYIIPFDQ+Mru8kHWLvH4lZ2kw+osxosyNfq8AFq2shSMN5LY+LO+IBnpnhF9++AH13gLWP9cLKBrQNeWrEoGRxI2IoAAAAASUVORK5CYII="/></a>
