@@ -80,6 +80,7 @@
 
 
 
+
   var a = JSON.parse(localStorage.getItem("users")) ;
   let b=a[0].email
     document.getElementById("ee").innerText=b
@@ -87,47 +88,23 @@
    var wishlistarr=JSON.parse(localStorage.getItem("wishlisted"))||[];
   var cartArr = JSON.parse(localStorage.getItem("bagged")) || [];
 
-  // var cartArr = [
-  //   {
-  //     image:
-  //       "https://img.ssensemedia.com/images/221264M180025_1/ermenegildo-zegna-undefined.jpg",
-  //     name: "Gray Webbing Belt",
-  //     designer: "Acne Studios",
-  //     price: 95,
-  //     category: "Belts & Suspendors",
-  //     sprice: 1000,
-  //   },
-  //   {
-  //     image:
-  //       "https://img.ssensemedia.com/images/221254M223003_1/lanvin-undefined.jpg",
-  //     name: "Black Gallery Dept. Edition Arpège Chelsea Boots",
-  //     designer: "Lanvin",
-  //     price: 785,
-  //     category: "Boots",
-  //     sprice: 1000,
-  //   },
-  //   {
-  //     image:
-  //       "https://img.ssensemedia.com/images/222387M231000_1/kenzo-undefined.jpg",
-  //     name: "Black Tiger Espadrilles",
-  //     designer: "Kenzo",
-  //     price: 456,
-  //     category: "Espadrilles",
-  //     sprice: 1000,
-  //   },
-  //   {
-  //     image:
-  //       "https://img.ssensemedia.com/images/222161M180003_1/ymc-undefined.jpg",
-  //     name: "Navy Umbro Edition Jacket",
-  //     designer: "YMC",
-  //     price: 456,
-  //     category: "Jackets & Coats",
-  //     sprice: 1000,
-  //   },
-  // ];
    var wishlistarr=JSON.parse(localStorage.getItem("wishlisted"))||[];
   var cartArr = JSON.parse(localStorage.getItem("bagged")) || [];
   // console.log(cartArr);
+
+
+
+
+  var a = JSON.parse(localStorage.getItem("users")) ;
+  let b=a[0].email
+    document.getElementById("ee").innerText=b
+  
+   var wishlistarr=JSON.parse(localStorage.getItem("wishlisted"))||[];
+  var cartArr = JSON.parse(localStorage.getItem("bagged")) || [];
+
+   var wishlistarr=JSON.parse(localStorage.getItem("wishlisted"))||[];
+  var cartArr = JSON.parse(localStorage.getItem("bagged")) || [];
+
 
   displayCart(cartArr);
 
@@ -139,9 +116,6 @@
     document.querySelector("#total1").innerText = "$" + 0;
     document.querySelector("#total2").innerText = "$" + 0;
 
-
-
-    console.log(cartArr);
 
     var uniqueCartItems = [];
     var itemsQuantity = [];
@@ -171,7 +145,6 @@
       }
     });
 
-    //   console.log(uniqueCartItems)
     uniqueCartItems.forEach(function (elem, index) {
       var card = document.createElement("div");
       card.setAttribute("id", "card");
@@ -182,7 +155,6 @@
       image.setAttribute("src", elem.image); //
       card1.append(image);
 
-      ///card2
       var card2 = document.createElement("div");
       card2.setAttribute("id", "card2");
 
@@ -208,20 +180,25 @@
       p2.setAttribute("id", "price");
       p2.innerText = "$" + elem.price; //
 
+
+
+        var n=Number(elem.price)
+      price1 = Number(price1) +(n * itemsQuantity[index]);
+
         var n=Number(elem.price)
         // console.log(elem.price)
       price1 = Number(price1) +(n * itemsQuantity[index]);
       // console.log(typeof price1);
+
       document.getElementById("total1").innerText = `$ ${Number(price1)}`;
       document.getElementById("total2").innerText = `$ ${Number(price1)}`;
 
       var p7 = document.createElement("span");
       p7.setAttribute("id", "sprice");
       p7.innerHTML = "$2000" ; //
-=======
+
 
       price1 = price1 + elem.price * itemsQuantity[index];
-      console.log(price1);
       document.getElementById("total1").innerText = "$" + price1;
       document.getElementById("total2").innerText = "$" + price1;
 
@@ -248,9 +225,6 @@
         addwishlist(elem, index);
       });
       
-
-
-
       var remove = document.createElement("button");
       remove.setAttribute("id", "remove");
       remove.innerText = "Remove";
@@ -310,8 +284,6 @@
     localStorage.setItem("cartData", JSON.stringify(cartArr));
     displayCart(cartArr);
 
-
-    console.log(cartArr);
 
   }
 
