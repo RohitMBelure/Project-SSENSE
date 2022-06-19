@@ -56,7 +56,6 @@
 
           <p id="ee">Email@gmail.com</p>
 
-          <p>khanhimayu2@gmail.com</p>
 
           <p>Not your account? <span id="bb">Sign in as another user.</span></p>
           <button id="pc">PROCEED TO CHECKOUT</button>
@@ -81,29 +80,18 @@
 
 
 
-  var a = JSON.parse(localStorage.getItem("users")) ;
-  let b=a[0].email
-    document.getElementById("ee").innerText=b
+  
+  
+    
   
    var wishlistarr=JSON.parse(localStorage.getItem("wishlisted"))||[];
   var cartArr = JSON.parse(localStorage.getItem("bagged")) || [];
 
-   var wishlistarr=JSON.parse(localStorage.getItem("wishlisted"))||[];
-  var cartArr = JSON.parse(localStorage.getItem("bagged")) || [];
-  // console.log(cartArr);
 
 
 
 
-  var a = JSON.parse(localStorage.getItem("users")) ;
-  let b=a[0].email
-    document.getElementById("ee").innerText=b
-  
-   var wishlistarr=JSON.parse(localStorage.getItem("wishlisted"))||[];
-  var cartArr = JSON.parse(localStorage.getItem("bagged")) || [];
 
-   var wishlistarr=JSON.parse(localStorage.getItem("wishlisted"))||[];
-  var cartArr = JSON.parse(localStorage.getItem("bagged")) || [];
 
 
   displayCart(cartArr);
@@ -185,10 +173,6 @@
         var n=Number(elem.price)
       price1 = Number(price1) +(n * itemsQuantity[index]);
 
-        var n=Number(elem.price)
-        // console.log(elem.price)
-      price1 = Number(price1) +(n * itemsQuantity[index]);
-      // console.log(typeof price1);
 
       document.getElementById("total1").innerText = `$ ${Number(price1)}`;
       document.getElementById("total2").innerText = `$ ${Number(price1)}`;
@@ -201,11 +185,6 @@
       price1 = price1 + elem.price * itemsQuantity[index];
       document.getElementById("total1").innerText = "$" + price1;
       document.getElementById("total2").innerText = "$" + price1;
-
-      var p7 = document.createElement("span");
-      p7.setAttribute("id", "sprice");
-      p7.innerHTML = "$" + elem.sprice; //
-
 
       var qty = document.createElement("p");
       qty.setAttribute("id", "qty");
@@ -281,7 +260,7 @@
 
   function addItems(elem) {
     cartArr.push(elem);
-    localStorage.setItem("cartData", JSON.stringify(cartArr));
+    localStorage.setItem("bagged", JSON.stringify(cartArr));
     displayCart(cartArr);
 
 
@@ -302,7 +281,7 @@
       }
     }
     cartArr.splice(i, 1);
-    localStorage.setItem("cartData", JSON.stringify(cartArr));
+    localStorage.setItem("bagged", JSON.stringify(cartArr));
     displayCart(cartArr);
 
   }
@@ -329,7 +308,7 @@
 
     localStorage.setItem("bagged", JSON.stringify(cartArr));
 
-    localStorage.setItem("cartData", JSON.stringify(cartArr));
+    localStorage.setItem("bagged", JSON.stringify(cartArr));
 
     displayCart(cartArr);
   }
@@ -562,4 +541,9 @@
    }
 
 
+
+var a = JSON.parse(localStorage.getItem("users")) ||{} ;
+let b=a[0].email||"Email@gmail.com"
+
+  document.getElementById("ee").innerText=b
 </script>

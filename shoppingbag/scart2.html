@@ -237,7 +237,7 @@ let b=document.getElementById("hk1");
     }
 }
 
-var cartArr = JSON.parse(localStorage.getItem("cartData")) || [];
+var cartArr = JSON.parse(localStorage.getItem("bagged")) || [];
 var wishlistarr = JSON.parse(localStorage.getItem("wishlisted")) || [];
 
 displayCart(cartArr);
@@ -412,7 +412,7 @@ function displayCart(cartArr) {
 
 function addItems(elem) {
   cartArr.push(elem);
-  localStorage.setItem("cartData", JSON.stringify(cartArr));
+  localStorage.setItem("bagged", JSON.stringify(cartArr));
   displayCart(cartArr);
   console.log(cartArr);
 }
@@ -432,7 +432,7 @@ function delItems(elem, index) {
     }
   }
   cartArr.splice(i, 1);
-  localStorage.setItem("cartData", JSON.stringify(cartArr));
+  localStorage.setItem("bagged", JSON.stringify(cartArr));
   displayCart(cartArr);
   console.log(cartArr);
 }
@@ -453,7 +453,7 @@ function removeFromCart(elem, index) {
     }
   });
   cartArr = newCartArr;
-  localStorage.setItem("cartData", JSON.stringify(cartArr));
+  localStorage.setItem("bagged", JSON.stringify(cartArr));
   displayCart(cartArr);
 }
 
