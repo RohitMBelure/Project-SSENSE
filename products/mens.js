@@ -761,8 +761,24 @@ const prod = [
       'https://img.ssensemedia.com/images/222669M213060_1/vetements-undefined.jpg',
     name: 'Red \'Vetements Translation\' T-Shirt',
     designer: '032c',
+
     price: '$440',
     category: 'Tops'
+
+    price: '$440',
+
+    price: '440',
+
+    category: 'Tops',
+    sImage:"https://img.ssensemedia.com/images/b_white,c_lpad,g_center,h_1412,w_940/c_scale,h_960/f_auto,dpr_1.0/222669M213060_2/vetements-red-vetements-translation-t-shirt.jpg",
+tImage:"https://img.ssensemedia.com/images/b_white,c_lpad,g_center,h_1412,w_940/c_scale,h_960/f_auto,dpr_1.0/222669M213060_3/vetements-red-vetements-translation-t-shirt.jpg",
+color:"Supplier color: Red",
+made_in:"Made in Portugal.",
+
+sprice:2000,
+
+big_desc:"Cotton jersey T-shirt.",
+
   }
   ,
   {
