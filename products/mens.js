@@ -743,12 +743,15 @@ const prod = [
       'https://img.ssensemedia.com/images/221264M180025_1/ermenegildo-zegna-undefined.jpg',
     name: 'Navy Cotton Blazer',
     designer: '032c',
+
     price: '$1825',
+    price: '1825',
     category: 'Suits & Blazers',
     sImage: "https://img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/221264M180025_2/ermenegildo-zegna-navy-cotton-blazer.jpg",
     tImage:"https://img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/221264M180025_3/ermenegildo-zegna-navy-cotton-blazer.jpg",
    color:"Supplier color: Dark gray",
    made_in:"Imported.",
+   sprice:2000,
    big_desc:"Nylon-blend webbing belt in gray. Jacquard woven logo graphics in purple and brown throughout."
   }
   ,
@@ -758,11 +761,13 @@ const prod = [
     name: 'White Tibb Down Vest',
     designer: '032c',
     price: '$1090',
+    price: '1090',
     category: 'Jackets & Coats',
     sImage:"https://img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/222111M178011_2/moncler-white-tibb-down-vest.jpg",
     tImage:"https://img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/222111M178011_3/moncler-white-tibb-down-vest.jpg",
     color:"Supplier color: White",
     made_in:"Imported",
+    sprice:2000,
     big_desc:"Down-filled quilted nylon satin vest.",
   }
   ,
@@ -772,7 +777,12 @@ const prod = [
     name: 'Red \'Vetements Translation\' T-Shirt',
     designer: '032c',
 
+
+
     price: '$440',
+
+    price: '440',
+
     category: 'Tops',
 
 
@@ -789,6 +799,11 @@ made_in:"Made in Portugal.",
 
 
 sprice:2000,
+
+
+
+sprice:2000,
+
 big_desc:"Cotton jersey T-shirt.",
 
 
@@ -801,12 +816,20 @@ big_desc:"Cotton jersey T-shirt.",
       'https://img.ssensemedia.com/images/222003M213015_1/dolce-and-gabbana-undefined.jpg',
     name: 'White Cotton T-Shirt',
     designer: '032c',
+
     price: '$520',
+
+    price: '520',
+
     category: 'Tops',
     sImage:"https://img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/222003M213015_2/dolce-and-gabbana-white-cotton-t-shirt.jpg",
     tImage:"https://img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/222003M213015_3/dolce-and-gabbana-white-cotton-t-shirt.jpg",
     color:"Supplier color: White",
     made_in:"Made in Italy",
+
+
+    sprice:2000,
+
     big_desc:"Cotton jersey T-shirt.",
     
   }
@@ -816,7 +839,12 @@ big_desc:"Cotton jersey T-shirt.",
       'https://img.ssensemedia.com/images/221891M236000_1/a-cold-wall-undefined.jpg',
     name: 'Gray ROA Edition Andreas Boots',
     designer: 'A-COLD-WALL*',
+
     price: '$535',
+
+    price: '535',
+    sprice:2000,
+
     category: 'Boots',
 
   }
@@ -826,7 +854,11 @@ big_desc:"Cotton jersey T-shirt.",
       'https://img.ssensemedia.com/images/221891M236002_1/a-cold-wall-undefined.jpg',
     name: 'Black ROA Edition Andreas Lace-Up Boots',
     designer: 'A-COLD-WALL*',
+
     price: '$535',
+   price: '535',
+    sprice:2000,
+
     category: 'Boots'
   }
   ,
