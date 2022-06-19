@@ -1,0 +1,136 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#desc-container{
+    height: 1800px;
+    display: flex;
+    margin-bottom: 40px;
+}
+#desc_card_left>p,#desc_card_right>p{
+    font-size: 12px;
+    font-family: sans-serif;
+}
+#desc_card_left,#desc_card_right{
+    width: 31%;
+    height:500px;
+    padding-left:60px;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#desc_card_mid{
+    width: 38%;
+}
+
+#desc_card_mid>div{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#desc_card_mid>div>img{
+    height: 100%;
+    cursor:-moz-zoom-in;
+    cursor: -webkit-zoom-in;
+}
+
+#bag_but{
+    margin:10px 0px;
+    background-color:#fff;
+    color: black;
+    padding:10px 40px;
+    cursor: pointer;
+}
+#bag_but:hover{
+    background-color:black;
+    color: #fff;
+}
+
+#whish_but{
+    margin:10px 0px;
+    background-color:#fff;
+    color: black;
+    padding:10px ;
+    cursor: pointer;
+}
+#whish_but:hover{
+    background-color:black;
+    color: #fff;
+}
+#desc_card_left>p{
+    margin:5px 0px; 
+}
+
+#desc_card_right>p:nth-child(4){
+    margin:10px 0px;
+}
+#desc_card_right>p:nth-child(5){
+    margin:10px 0px;
+    color: grey;
+    opacity: 0.8;
+}
+body::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    width: 8px;
+    background-color: rgb(132, 132, 132);
+    border-radius: 20px;
+}
+::-webkit-scrollbar-track{
+background-color:rgb(233, 219, 219)
+}
+#info{
+    padding: 10px;
+    position: absolute;
+    display: none;
+    top: 80px;
+    left: 400px;
+    background-color: #fff;
+    color: black;
+    height: 500px;
+    width: 800px;
+    border:1px solid black;
+}
+#info>div:nth-child(1){
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;  
+
+}
+#info-tabel{
+    margin:40px;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(6,40px);
+}
+#info-tabel>div:nth-child(1){
+    width: 100px;
+}
+#info-tabel>div{
+    border-bottom: 2px solid grey;
+    height: 20px;
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
+#size{
+    cursor: pointer;
+}
+#select_size{
+    width: 200px;
+    height: 30px;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+#footer{
+    margin-top: 40px;
+}
+
+
