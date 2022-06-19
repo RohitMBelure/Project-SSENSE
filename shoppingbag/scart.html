@@ -98,7 +98,7 @@
 
   function displayCart(cartArr) {
     var price1 = 0;
-    var discount = 0;
+
 
     document.querySelector("#cart112").innerHTML = "";
     document.querySelector("#total1").innerText = "$" + 0;
@@ -168,21 +168,17 @@
       p2.setAttribute("id", "price");
       p2.innerText = "$" + elem.price; //
 
-
+      
 
         var n=Number(elem.price)
-      price1 = Number(price1) +(n * itemsQuantity[index]);
-
-
-      document.getElementById("total1").innerText = `$ ${Number(price1)}`;
-      document.getElementById("total2").innerText = `$ ${Number(price1)}`;
+     
 
       var p7 = document.createElement("span");
       p7.setAttribute("id", "sprice");
       p7.innerHTML = "$2000" ; //
 
 
-      price1 = price1 + elem.price * itemsQuantity[index];
+      price1 = price1 + (n * itemsQuantity[index]);
       document.getElementById("total1").innerText = "$" + price1;
       document.getElementById("total2").innerText = "$" + price1;
 
