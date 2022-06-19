@@ -12,49 +12,7 @@ wishlist.append(div)
 
 const container = document.querySelector('#products');
 
-// let arr = [
-//     {
-//   Image:"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222745M139001_1/online-ceramics-black-its-ok-cap.jpg",  
-//   name:"ONLION CERAMICS",
-//   description:"Black 'It's Ok' cap",
-//   size:"Size UNI",
-//   price:"$45"
-// },
-// {
-//     Image:"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222745M139001_1/online-ceramics-black-its-ok-cap.jpg",  
-//     name:"ONLION CERAMICS",
-//     description:"Black 'It's Ok' cap",
-//     size:"Size UNI",
-//     price:"$45"
-//   },
-//   {
-//     Image:"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222745M139001_1/online-ceramics-black-its-ok-cap.jpg",  
-//     name:"ONLION CERAMICS",
-//     description:"Black 'It's Ok' cap",
-//     size:"Size UNI",
-//     price:"$45"
-//   },{
-//     Image:"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222745M139001_1/online-ceramics-black-its-ok-cap.jpg",  
-//     name:"ONLION CERAMICS",
-//     description:"Black 'It's Ok' cap",
-//     size:"Size UNI",
-//     price:"$45"
-//   },{
-//     Image:"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222745M139001_1/online-ceramics-black-its-ok-cap.jpg",  
-//     name:"ONLION CERAMICS",
-//     description:"Black 'It's Ok' cap",
-//     size:"Size UNI",
-//     price:"$45"
-//   },{
-//     Image:"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222745M139001_1/online-ceramics-black-its-ok-cap.jpg",  
-//     name:"ONLION CERAMICS",
-//     description:"Black 'It's Ok' cap",
-//     size:"Size UNI",
-//     price:"$45"
-//   }
-// ];
-
-let arr = [];
+let arr = JSON.parse(localStorage.getItem("whishlisted")) || [];
 
 if (arr.length===0){
     container.innerHTML=null;
@@ -91,11 +49,11 @@ arr.forEach((ele,index) => {
     let div = document.createElement("div");
     div.setAttribute("class", "cart");
     let image = document.createElement("img");
-    image.src=ele.Image;
+    image.src=ele.image;
     let name = document.createElement("p");
     name.innerText=ele.name;
     let desc = document.createElement("p");
-    desc.innerText=ele.description;
+    desc.innerText=ele.big_desc;
     let size = document.createElement("p");
     size.innerText=ele.size;
     let price = document.createElement("p");
@@ -118,24 +76,25 @@ arr.forEach((ele,index) => {
 });
 }
 
-let shoppingBagArr = JSON.parse(localStorage.getItem("shoppingBagData")) || [];
+let shoppingBagArr = JSON.parse(localStorage.getItem("bagged")) || [];
+
 function add(ele,btn){
     if (btn.innerText==="ADD TO BAG"){
         shoppingBagArr.push(ele);
-        localStorage.setItem("shoppingBagData", JSON.stringify(shoppingBagArr));
+        localStorage.setItem("bagged", JSON.stringify(shoppingBagArr));
         alert("This item has been added to you bag")
         btn.innerText="PROCEED TO CHECKOUT";
     }
     else{
         btn.addEventListener("click", function(){
-            window.location.href="shoppin-bag.html";
+            window.location.href="../shoppingbag/scart.html";
         })
     }
 }
 
 function remove(index){
     arr.splice(index,1);
-    localStorage.setItem("wishlist", JSON.stringify(arr));
+    localStorage.setItem("whishlisted", JSON.stringify(arr));
     alert("Removed from Wishlist");
     window.location.reload();
 }

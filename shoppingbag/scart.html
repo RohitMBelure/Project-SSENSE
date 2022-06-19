@@ -53,7 +53,11 @@
       <div id="cart12">
         <div>
           <p>LOGGED IN AS</p>
+
           <p id="ee">Email@gmail.com</p>
+
+          <p>khanhimayu2@gmail.com</p>
+
           <p>Not your account? <span id="bb">Sign in as another user.</span></p>
           <button id="pc">PROCEED TO CHECKOUT</button>
         </div>
@@ -75,12 +79,56 @@
   document.getElementById("footer").innerHTML = footer();
 
 
+
   var a = JSON.parse(localStorage.getItem("users")) ;
   let b=a[0].email
     document.getElementById("ee").innerText=b
   
    var wishlistarr=JSON.parse(localStorage.getItem("wishlisted"))||[];
   var cartArr = JSON.parse(localStorage.getItem("bagged")) || [];
+
+  // var cartArr = [
+  //   {
+  //     image:
+  //       "https://img.ssensemedia.com/images/221264M180025_1/ermenegildo-zegna-undefined.jpg",
+  //     name: "Gray Webbing Belt",
+  //     designer: "Acne Studios",
+  //     price: 95,
+  //     category: "Belts & Suspendors",
+  //     sprice: 1000,
+  //   },
+  //   {
+  //     image:
+  //       "https://img.ssensemedia.com/images/221254M223003_1/lanvin-undefined.jpg",
+  //     name: "Black Gallery Dept. Edition Arpège Chelsea Boots",
+  //     designer: "Lanvin",
+  //     price: 785,
+  //     category: "Boots",
+  //     sprice: 1000,
+  //   },
+  //   {
+  //     image:
+  //       "https://img.ssensemedia.com/images/222387M231000_1/kenzo-undefined.jpg",
+  //     name: "Black Tiger Espadrilles",
+  //     designer: "Kenzo",
+  //     price: 456,
+  //     category: "Espadrilles",
+  //     sprice: 1000,
+  //   },
+  //   {
+  //     image:
+  //       "https://img.ssensemedia.com/images/222161M180003_1/ymc-undefined.jpg",
+  //     name: "Navy Umbro Edition Jacket",
+  //     designer: "YMC",
+  //     price: 456,
+  //     category: "Jackets & Coats",
+  //     sprice: 1000,
+  //   },
+  // ];
+   var wishlistarr=JSON.parse(localStorage.getItem("wishlisted"))||[];
+  var cartArr = JSON.parse(localStorage.getItem("bagged")) || [];
+  // console.log(cartArr);
+
   displayCart(cartArr);
 
   function displayCart(cartArr) {
@@ -90,6 +138,10 @@
     document.querySelector("#cart112").innerHTML = "";
     document.querySelector("#total1").innerText = "$" + 0;
     document.querySelector("#total2").innerText = "$" + 0;
+
+
+
+    console.log(cartArr);
 
     var uniqueCartItems = [];
     var itemsQuantity = [];
@@ -155,6 +207,7 @@
       var p2 = document.createElement("span");
       p2.setAttribute("id", "price");
       p2.innerText = "$" + elem.price; //
+
         var n=Number(elem.price)
         // console.log(elem.price)
       price1 = Number(price1) +(n * itemsQuantity[index]);
@@ -165,6 +218,17 @@
       var p7 = document.createElement("span");
       p7.setAttribute("id", "sprice");
       p7.innerHTML = "$2000" ; //
+=======
+
+      price1 = price1 + elem.price * itemsQuantity[index];
+      console.log(price1);
+      document.getElementById("total1").innerText = "$" + price1;
+      document.getElementById("total2").innerText = "$" + price1;
+
+      var p7 = document.createElement("span");
+      p7.setAttribute("id", "sprice");
+      p7.innerHTML = "$" + elem.sprice; //
+
 
       var qty = document.createElement("p");
       qty.setAttribute("id", "qty");
@@ -245,7 +309,10 @@
     cartArr.push(elem);
     localStorage.setItem("cartData", JSON.stringify(cartArr));
     displayCart(cartArr);
-    // console.log(cartArr);
+
+
+    console.log(cartArr);
+
   }
 
   function delItems(elem, index) {
@@ -265,11 +332,13 @@
     cartArr.splice(i, 1);
     localStorage.setItem("cartData", JSON.stringify(cartArr));
     displayCart(cartArr);
-    // console.log(cartArr);
+
   }
 
   function removeFromCart(elem, index) {
     event.target.parentNode.remove();
+
+
 
     var newCartArr = [];
     cartArr.forEach(function (ele) {
@@ -277,7 +346,7 @@
         ele.image !== elem.image ||
         ele.name !== elem.name ||
         ele.price !== elem.price ||
-        // ele.sprice !== elem.sprice ||
+
         ele.category !== elem.category ||
         ele.designer !== elem.designer
       ) {
@@ -285,7 +354,11 @@
       }
     });
     cartArr = newCartArr;
+
     localStorage.setItem("bagged", JSON.stringify(cartArr));
+
+    localStorage.setItem("cartData", JSON.stringify(cartArr));
+
     displayCart(cartArr);
   }
 
@@ -457,7 +530,7 @@
   display(data);
 
   function display(data) {
-    // console.log(data);
+
     data.forEach(function (elem, index) {
       var box = document.createElement("div");
       box.setAttribute("id", "box");
