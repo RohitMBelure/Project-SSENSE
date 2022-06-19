@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping bag | SSENSE</title>
+
+    <link rel="stylesheet" href="../home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="scart2.css">
+
+    
+</head>
+<body>
+
+    <!---------------------------------------- Navbar ------------------------------------->
+        <div id="navbar"></div>
+    
+    <!---------------------------------------- Navbar close ------------------------------------->
+    
+    
+    
+    <!----------------------------------------  cart body ------------------------------------->
+        <div id="cart1" >
+            <div id="cart11">
+                        <div id="cart111">
+                            <h1>CHECKOUT</h1>
+                            <p>SHIPPING ADDRESS</p>
+                            <hr>
+                            <!-- <hr> -->
+
+                        </div>
+
+
+                        <div id="cart112">
+                                    <div id="cart1121">
+                                        <p> First Name</p>
+                                        <input  type="text" class="bigbox" required>
+                                        <p> Street Address</p>
+                                        <input type="text" class="bigbox" required>
+                                        <p> City</p>
+                                        <input type="text" class="bigbox" required>
+                                        <p> Country/Region</p>
+                                        <input type="text" class="bigbox" required>
+                                        <p> Phone</p>
+                                        <input type="text" class="smallbox required">
+                                    </div>
+
+
+                                    <div id="cart1122">
+                                            <p> Last Name</p>
+                                            <input type="text" class="bigbox" required>
+                                            <p> Company (Optional)</p>
+                                            <input type="text" class="bigbox" >
+                        
+                                            <p> ZIP Or Postal Code</p>
+                                            <input type="text" class="smallbox" required>
+                        
+                                            <p> State/Province</p>
+                                            <input type="text" class="smallbox" required><br>
+                                    </div>
+                        
+                        </div>
+
+
+                        
+                        <p id="sm">SHIPPING METHOD</p>
+                        <hr>
+                        <!-- <hr> -->
+                        <input type="checkbox" name="" id="ex" required> <span>$ 40.00 USD | 5-7 days | Express</span>
+
+                        <p id="pm">PAYMENT METHOD</p>
+                        <hr>
+                        <!-- <hr> -->
+                        <input type="checkbox" id="hk" required> <span>Pay with credit card or debit card</span><br>
+                        <input type="checkbox" name="" id="" required> <span>Cash on delivery</span><br>
+
+
+                    
+                    <div id="card113">
+                        <p id="cdd">Card Details</p>
+                        <hr>
+                        <!-- <hr> -->
+                        <div id="cart113">
+                            <div id="cart1121">
+                                <label> Card Number<label/><br>
+                                <input  type="text" class="bigbox" placeholder=" 1234 1234 1234 1234" required><br>
+                                <label> Cardholder’s Name<label/><br>
+                                <input type="text" class="bigbox" required><br>
+            
+                            </div>
+            
+            
+                            <div id="cart1123">
+                                    <label> Expiration Date<label/><br>
+                                    <input type="text" class="smallbox" placeholder=" MM/YY" required><br>
+                                    <label> Security Code<label/><br>
+                                    <input type="text" class="smallbox" placeholder=" CVV" required><br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <input type="checkbox" name="" id="fp"> <span>Save your card details for future purchases</span>
+                    <p id="ba">BILLING ADDRESS</p>
+                    <hr>
+                    <!-- <hr> -->
+
+                    <input type="checkbox" name="" id="hk1"> <span>Same as shipping address</span>
+
+                    <div id="address">
+                        <div id="address1">
+                                <div id="cart1121">
+                                    <label> First Name<label/><br>
+                                    <input  type="text" class="bigbox" required><br>
+                                    <label> Street Address<label/><br>
+                                    <input type="text" class="bigbox" required><br>
+
+                                    <label> City<label/><br>
+                                    <input type="text" class="bigbox" required><br>
+
+                                    <label> Country/Region<label/><br>
+                                    <input type="text" class="bigbox" required><br>
+                                    <label> Phone<label/><br>
+                                    <input type="text" class="smallbox" required>
+                                </div>
+
+
+                                <div id="cart1122">
+                                    <label> Last Name<label/><br>
+                                    <input type="text" class="bigbox" required><br>
+                                    <label> Company (Optional)<label/><br>
+                                    <input type="text" class="bigbox" required><br>
+                
+                                    <label> ZIP Or Postal Code<label/><br>
+                                    <input type="text" class="smallbox" required><br>
+                
+                                    <label> State/Province<label/><br>
+                                    <input type="text" class="smallbox" required><br>
+                                </div>
+                        </div>
+                    </div>
+                    <!-- <hr> -->
+                    <hr>
+                    <p id="ad">SSENSE, 333 Chabanel W, #900, Montreal, QC, CA, H2N 2E7</p>
+                    <span id="tc">Terms & Conditions </span> <span id="pp">Privacy Policy</span>
+              
+            </div>
+
+            <div id="cart12">
+                <div>
+                <p class="os">ORDER SUMMARY - (<span id="qtyy">5</span>) ITEMS</p>
+                
+                <hr>
+           
+                <div id="aa"></div>
+
+                <hr>
+  
+                <div class="sum">
+                    <div  class="bold">Subtotal</div>
+                    <div id="total1">$0</div>
+                </div>
+                <div class="sum">
+                    <div class="bold">Shipping total</div>
+                    <div>$40.00</div>
+                </div>
+
+         
+                <hr>
+                <div class="sum">
+                    <div class="bold">Order total (USD)</div>
+                    <div id="total3"></div>
+                </div>
+                <hr>
+      
+                <p id="in">Important Notice <br>
+                    Our prices do not include Duty and VAT. Please consult your country/region’s customs legislation for more information about potential additional charges.</p>
+                
+                <button id="PO">PLACE ORDER</button>
+                </div>
+            </div>
+        </div>
+    
+    
+    <!----------------------------------------  cart body close ------------------------------------->
+    
+    
+    
+    
+    
+    
+    <!---------------------------------------- Footer ------------------------------------->
+        <div id="footer"></div>
+    <!---------------------------------------- Footer close ------------------------------------->    
+    </body>
+</html>
+
+<script type="module">
+
+  import navbar from "../components/navbar.js";
+  document.getElementById("navbar").innerHTML = navbar();
+
+  import footer from "../components/footer.js";
+  document.getElementById("footer").innerHTML = footer();
+
+
+
+
+
+    let a=document.getElementById("hk");
+    a.addEventListener("change",func)
+    function func(){console.log(a.checked);
+    if(a.checked==true)
+    {
+      document.getElementById("card113").style.display="block";
+    }
+    else
+    {
+        document.getElementById("card113").style.display="none";
+    }
+}
+
+
+
+let b=document.getElementById("hk1");
+    b.addEventListener("change",func1)
+    function func1(){
+    if(b.checked==true)
+    {
+      document.getElementById("address").style.display="none";
+    }
+    else
+    {
+        document.getElementById("address").style.display="block";
+    }
+}
+
+var cartArr = JSON.parse(localStorage.getItem("cartData")) || [];
+var wishlistarr = JSON.parse(localStorage.getItem("wishlisted")) || [];
+
+displayCart(cartArr);
+
+function displayCart(cartArr) {
+  var price1 = 0;
+  var discount = 0;
+
+  document.querySelector("#aa").innerHTML = "";
+  document.querySelector("#total1").innerText ="$"+ 0;
+
+  // console.log(cartArr);
+  var uniqueCartItems = [];
+  var itemsQuantity = [];
+
+          cartArr.forEach(function (ele) {
+            var flag = false;
+            for (var i = 0; i < uniqueCartItems.length; i++) {
+              var obj = uniqueCartItems[i];
+              if (
+                obj.image === ele.image &&
+                obj.name === ele.name &&
+                obj.price === ele.price &&
+                obj.designer === ele.designer &&
+                obj.category === ele.category&&
+                obj.sprice=== ele.sprice
+              ) {
+                flag = true;
+                break;
+              }
+            }
+
+            if (flag) {
+              itemsQuantity[i] = itemsQuantity[i] + 1;
+            } else {
+              uniqueCartItems.push(ele);
+              itemsQuantity.push(1);
+            }
+          });
+
+  //   console.log(uniqueCartItems)
+                                                uniqueCartItems.forEach(function (elem, index) {
+                                                  
+                                                  var card = document.createElement("div");
+                                                  card.setAttribute("id", "card");
+
+                                                  var card1 = document.createElement("div");
+                                                  card1.setAttribute("id", "card1");
+                                                  var image = document.createElement("img");
+                                                  image.setAttribute("src", elem.image); //
+                                                  card1.append(image);
+
+                                                  ///card2
+                                                  var card2 = document.createElement("div");
+                                                  card2.setAttribute("id", "card2");
+
+                                                  var card21 = document.createElement("div");
+                                                  card21.setAttribute("id", "card21");
+
+                                                  var card211 = document.createElement("div");
+                                                  card211.setAttribute("id", "card211");
+                                                  var p = document.createElement("p");
+                                                  p.innerHTML = elem.name; //
+                                                  var p1 = document.createElement("p");
+                                                  p1.innerHTML = elem.designer; //
+                                                  var p3 = document.createElement("p");
+                                                  p3.innerHTML = elem.category; //
+                                                  var sizebtn = document.createElement("button");
+
+                                                  card211.append(p, p1, p3, sizebtn);
+
+                                                  var card212 = document.createElement("div");
+                                                  card212.setAttribute("id", "card212");
+
+                                                  var p2 = document.createElement("span");
+                                                  p2.setAttribute("id", "price");
+                                                  p2.innerText = "$"+elem.price; //
+                                                 
+
+                                                  price1 = price1 + (elem.price * itemsQuantity[index]);
+                                                  console.log(price1)
+                                                  document.getElementById("total1").innerText = "$" + price1;
+                                                  // document.getElementById("total2").innerText = "$" + price1;
+
+                                                  document.getElementById("total3").innerText = "$" + (40+ price1);
+                                                  document.querySelector("#qtyy").innerHTML =itemsQuantity.length;
+
+                                                  var p7 = document.createElement("span");
+                                                  p7.setAttribute("id", "sprice");
+                                                  p7.innerHTML = "$"+ elem.sprice; //
+
+                                                 
+
+                                                  var qty = document.createElement("p");
+                                                  qty.setAttribute("id", "qty");
+                                                  qty.innerText = "Qty:" + itemsQuantity[index]; //
+
+                                                  card212.append(p7, p2, qty);
+                                
+
+                                                  var card22 = document.createElement("div");
+                                                  card22.setAttribute("id", "card22");
+                                                  var card221 = document.createElement("div");
+                                                  card221.setAttribute("id", "card221");
+
+                                                  var wishlistbtn = document.createElement("button");
+                                                  wishlistbtn.setAttribute("id", "wl");
+                                                  wishlistbtn.innerText = "Add to wishlist";
+                                                  wishlistbtn.addEventListener("click", function () {
+        addwishlist(elem, index);
+      });
+
+
+                                                  var remove = document.createElement("button");
+                                                  remove.setAttribute("id", "remove");
+                                                  remove.innerText = "Remove";
+                                                  remove.addEventListener("click", function () {
+                                                    removeFromCart(elem, index);
+                                                  });
+
+                                                  card221.append(wishlistbtn, remove);
+
+                                                  var card222 = document.createElement("div");
+                                                  card222.setAttribute("id", "card222");
+
+                                                  var add = document.createElement("button");
+                                                  add.setAttribute("id", "add");
+                                                  add.innerText = "Add";
+                                                  add.addEventListener("click", function () {
+                                                    addItems(elem);
+                                                  });
+
+                                                  var del = document.createElement("button");
+                                                  del.setAttribute("id", "del");
+                                                  del.innerText = "Del";
+
+                                                  del.addEventListener("click", function () {
+                                                    delItems(elem, index);
+                                                  });
+
+                                                  card222.append(add, del);
+                                                  // var hr = document.createElement("hr");
+                                                  // del.innerText="del"
+
+                                                  card21.append(card211, card212);
+                                                  card22.append(card221, card222);
+                                                  card2.append(card21, card22);
+                                                  card.append(card1, card2);
+                                                  document.getElementById("aa").append(card);
+
+                                                  var hr = document.createElement("hr");
+                                                  hr.setAttribute("class", "hr");
+                                                  hr.style.color = "blue";
+                                                  hr.style.width = "98%";
+
+                                                  hr.style.height = "1px";
+                                                  document.getElementById("aa").append(hr);
+                                                });
+                                              }
+
+
+
+                                              
+                                              
+                                              
+                                              
+                                              function addwishlist(elem) {
+    wishlistarr.push(elem);
+    localStorage.setItem("wishlisted", JSON.stringify(wishlistarr));
+   
+  }
+
+function addItems(elem) {
+  cartArr.push(elem);
+  localStorage.setItem("cartData", JSON.stringify(cartArr));
+  displayCart(cartArr);
+  console.log(cartArr);
+}
+
+function delItems(elem, index) {
+  for (var i = cartArr.length - 1; i >= 0; i--) {
+    var ele = cartArr[i];
+    if (
+      ele.image === elem.image ||
+      ele.name === elem.name ||
+      ele.price === elem.price ||
+      ele.sprice === elem.sprice ||
+      ele.category === elem.category ||
+      ele.designer === elem.designer
+    ) {
+      break;
+    }
+  }
+  cartArr.splice(i, 1);
+  localStorage.setItem("cartData", JSON.stringify(cartArr));
+  displayCart(cartArr);
+  console.log(cartArr);
+}
+
+function removeFromCart(elem, index) {
+  event.target.parentNode.remove();
+  var newCartArr = [];
+  cartArr.forEach(function (ele) {
+    if (
+      ele.image !== elem.image ||
+      ele.name !== elem.name ||
+      ele.price !== elem.price ||
+      ele.sprice !== elem.sprice ||
+      ele.category !== elem.category ||
+      ele.designer !== elem.designer
+    ) {
+      newCartArr.push(ele);
+    }
+  });
+  cartArr = newCartArr;
+  localStorage.setItem("cartData", JSON.stringify(cartArr));
+  displayCart(cartArr);
+}
+
+
+document.getElementById("PO").addEventListener("click",myfunc8)
+
+function myfunc8(){
+  alert("Order Placed Successfully")
+}
+
+</script>

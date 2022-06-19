@@ -743,12 +743,20 @@ const prod = [
       'https://img.ssensemedia.com/images/221264M180025_1/ermenegildo-zegna-undefined.jpg',
     name: 'Navy Cotton Blazer',
     designer: '032c',
+<<<<<<< Updated upstream
     price: '$1825',
+=======
+    price: '1825',
+>>>>>>> Stashed changes
     category: 'Suits & Blazers',
     sImage: "https://img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/221264M180025_2/ermenegildo-zegna-navy-cotton-blazer.jpg",
     tImage:"https://img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/221264M180025_3/ermenegildo-zegna-navy-cotton-blazer.jpg",
    color:"Supplier color: Dark gray",
    made_in:"Imported.",
+<<<<<<< Updated upstream
+=======
+   sprice:2000,
+>>>>>>> Stashed changes
    big_desc:"Nylon-blend webbing belt in gray. Jacquard woven logo graphics in purple and brown throughout."
   }
   ,
@@ -757,12 +765,20 @@ const prod = [
       'https://img.ssensemedia.com/images/222111M178011_1/moncler-undefined.jpg',
     name: 'White Tibb Down Vest',
     designer: '032c',
+<<<<<<< Updated upstream
     price: '$1090',
+=======
+    price: '1090',
+>>>>>>> Stashed changes
     category: 'Jackets & Coats',
     sImage:"https://img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/222111M178011_2/moncler-white-tibb-down-vest.jpg",
     tImage:"https://img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/222111M178011_3/moncler-white-tibb-down-vest.jpg",
     color:"Supplier color: White",
     made_in:"Imported",
+<<<<<<< Updated upstream
+=======
+    sprice:2000,
+>>>>>>> Stashed changes
     big_desc:"Down-filled quilted nylon satin vest.",
   }
   ,
@@ -771,12 +787,20 @@ const prod = [
       'https://img.ssensemedia.com/images/222669M213060_1/vetements-undefined.jpg',
     name: 'Red \'Vetements Translation\' T-Shirt',
     designer: '032c',
+<<<<<<< Updated upstream
     price: '$440',
+=======
+    price: '440',
+>>>>>>> Stashed changes
     category: 'Tops',
     sImage:"https://img.ssensemedia.com/images/b_white,c_lpad,g_center,h_1412,w_940/c_scale,h_960/f_auto,dpr_1.0/222669M213060_2/vetements-red-vetements-translation-t-shirt.jpg",
 tImage:"https://img.ssensemedia.com/images/b_white,c_lpad,g_center,h_1412,w_940/c_scale,h_960/f_auto,dpr_1.0/222669M213060_3/vetements-red-vetements-translation-t-shirt.jpg",
 color:"Supplier color: Red",
 made_in:"Made in Portugal.",
+<<<<<<< Updated upstream
+=======
+sprice:2000,
+>>>>>>> Stashed changes
 big_desc:"Cotton jersey T-shirt.",
   }
   ,
@@ -785,12 +809,20 @@ big_desc:"Cotton jersey T-shirt.",
       'https://img.ssensemedia.com/images/222003M213015_1/dolce-and-gabbana-undefined.jpg',
     name: 'White Cotton T-Shirt',
     designer: '032c',
+<<<<<<< Updated upstream
     price: '$520',
+=======
+    price: '520',
+>>>>>>> Stashed changes
     category: 'Tops',
     sImage:"https://img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/222003M213015_2/dolce-and-gabbana-white-cotton-t-shirt.jpg",
     tImage:"https://img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/222003M213015_3/dolce-and-gabbana-white-cotton-t-shirt.jpg",
     color:"Supplier color: White",
     made_in:"Made in Italy",
+<<<<<<< Updated upstream
+=======
+    sprice:2000,
+>>>>>>> Stashed changes
     big_desc:"Cotton jersey T-shirt.",
     
   }
@@ -800,7 +832,12 @@ big_desc:"Cotton jersey T-shirt.",
       'https://img.ssensemedia.com/images/221891M236000_1/a-cold-wall-undefined.jpg',
     name: 'Gray ROA Edition Andreas Boots',
     designer: 'A-COLD-WALL*',
+<<<<<<< Updated upstream
     price: '$535',
+=======
+    price: '535',
+    sprice:2000,
+>>>>>>> Stashed changes
     category: 'Boots',
 
   }
@@ -810,7 +847,12 @@ big_desc:"Cotton jersey T-shirt.",
       'https://img.ssensemedia.com/images/221891M236002_1/a-cold-wall-undefined.jpg',
     name: 'Black ROA Edition Andreas Lace-Up Boots',
     designer: 'A-COLD-WALL*',
+<<<<<<< Updated upstream
     price: '$535',
+=======
+    price: '535',
+    sprice:2000,
+>>>>>>> Stashed changes
     category: 'Boots'
   }
   ,
